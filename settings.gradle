@@ -1,0 +1,3 @@
+include ':licenseInput'
+include ':app'
+rootProject.name = "Vehicle license"

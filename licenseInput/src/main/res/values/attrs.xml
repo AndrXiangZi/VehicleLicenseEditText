@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LicenseKeyboardView">
+        <attr name="inputType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="num" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
