@@ -1,11 +1,13 @@
 package com.xz.licenseinput
 
 import android.content.Context
+import android.graphics.Color
 import android.inputmethodservice.Keyboard
 import android.inputmethodservice.KeyboardView
 import android.util.AttributeSet
 import android.view.View
 import android.view.animation.AnimationUtils
+import androidx.core.widget.addTextChangedListener
 
 class LicenseKeyboardView : KeyboardView {
 
@@ -42,6 +44,14 @@ class LicenseKeyboardView : KeyboardView {
 
     fun bindLicenseEditText(licenseEditText: LicenseEditText) {
         this.licenseEditText = licenseEditText
+        licenseEditText.addTextChangedListener {
+            val text = it?.toString()
+            if (text.isNullOrEmpty()){
+                setInputType(0)
+            }else{
+                setInputType(1)
+            }
+        }
     }
 
     fun setInputType(inputType: Int) {

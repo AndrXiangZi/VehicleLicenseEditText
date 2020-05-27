@@ -15,10 +15,12 @@ class LicenseEditText(context: Context, attrs: AttributeSet?) :
     androidx.appcompat.widget.AppCompatEditText(context, attrs) {
 
     private val bottomSheetDialog:BottomSheetDialog = BottomSheetDialog(context,R.style.dialog)
+    private var licenseKeyboardView:LicenseKeyboardView? = null
 
     init {
         bottomSheetDialog.setContentView(R.layout.dialog_license_keyboard)
-        bottomSheetDialog.findViewById<LicenseKeyboardView>(R.id.licenseKeyboardView)?.bindLicenseEditText(this)
+        licenseKeyboardView = bottomSheetDialog.findViewById<LicenseKeyboardView>(R.id.licenseKeyboardView)
+        licenseKeyboardView?.bindLicenseEditText(this)
     }
 
     //1.隐藏系统弹出的键盘

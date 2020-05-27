@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:horizontalGap="1%"
-    android:keyWidth="9%"
-    android:keyHeight="50dp"
-    android:verticalGap="2%">
+    android:verticalGap="1px"
+    android:horizontalGap="1px"
+    android:keyWidth="10%"
+    android:keyHeight="45dp">
+    <Row>
+        <Key
+            android:codes="28207"
+            android:keyLabel="港"
+            android:keyWidth="20%"
+            android:keyOutputText="港" />
+        <Key
+            android:codes="28595"
+            android:keyLabel="澳"
+            android:keyWidth="20%"
+            android:keyOutputText="澳" />
+
+        <Key
+            android:codes="20351"
+            android:keyLabel="挂"
+            android:keyWidth="20%"
+            android:keyOutputText="挂" />
+        <Key
+            android:codes="23398"
+            android:keyLabel="学"
+            android:keyWidth="20%"
+            android:keyOutputText="学" />
+        <Key
+            android:codes="35686"
+            android:keyLabel="警"
+            android:keyWidth="20%"
+            android:keyOutputText="警" />
+    </Row>
     <Row>
         <Key
             android:codes="49"
@@ -75,24 +103,18 @@
             android:codes="85"
             android:keyLabel="U"
             android:keyOutputText="U" />
-        <Key
-            android:codes="73"
-            android:keyLabel="I"
-            android:keyOutputText="I" />
-        <Key
-            android:codes="79"
-            android:keyLabel="O"
-            android:keyOutputText="O" />
+<!--        <Key-->
+<!--            android:codes="73"-->
+<!--            android:keyLabel="I"-->
+<!--            android:keyOutputText="I" />-->
+<!--        <Key-->
+<!--            android:codes="79"-->
+<!--            android:keyLabel="O"-->
+<!--            android:keyOutputText="O" />-->
         <Key
             android:codes="80"
             android:keyLabel="P"
             android:keyOutputText="P" />
-    </Row>
-    <Row>
-        <Key
-            android:codes="646394"
-            android:keyWidth="4%"
-            android:keyIcon="@drawable/empty_bg" />
         <Key
             android:codes="65"
             android:keyLabel="A"
@@ -101,6 +123,9 @@
             android:codes="83"
             android:keyLabel="S"
             android:keyOutputText="S" />
+    </Row>
+    <Row>
+
         <Key
             android:codes="68"
             android:keyLabel="D"
@@ -130,12 +155,6 @@
             android:codes="76"
             android:keyLabel="L"
             android:keyOutputText="L" />
-    </Row>
-    <Row>
-        <Key
-            android:codes="646394"
-            android:keyWidth="14%"
-            android:keyLabel="中文" />
         <Key
             android:codes="90"
             android:keyLabel="Z"
@@ -148,6 +167,9 @@
             android:codes="67"
             android:keyLabel="C"
             android:keyOutputText="C" />
+    </Row>
+    <Row>
+
         <Key
             android:codes="86"
             android:keyLabel="V"
@@ -164,9 +186,23 @@
             android:codes="77"
             android:keyLabel="M"
             android:keyOutputText="M" />
+
+        <Key
+            android:codes="-1"
+            android:keyLabel=""
+            android:keyOutputText="" />
+        <Key
+            android:codes="-1"
+            android:keyLabel=""
+            android:keyOutputText="" />
+
+        <Key
+            android:codes="-1"
+            android:keyLabel=""
+            android:keyOutputText="" />
         <Key
             android:codes="-5"
-            android:keyWidth="14%"
-            android:keyIcon="@drawable/key_del" />
+            android:keyWidth="30%"
+            android:keyIcon="@drawable/ic_del" />
     </Row>
 </Keyboard>
